@@ -1,6 +1,6 @@
 # ToDos
 
-一个集待办事项和活动于一身的高度可定制化的todo类产品。
+一个集待办事项和活动于一身的高度可定制化todo类产品。
 
 ### 需求
 
@@ -24,7 +24,7 @@
     + 日历中当前月显示
     + 提前提醒
   + 邀请
-    + Email/手机
+    + Email/手机号
 
 ### 设计
 
@@ -45,6 +45,8 @@
 #### 界面
 
 + [semantic-ui](http://semantic-ui.com/introduction/new.html)
++ [material-ui-vue](http://material-ui-vue.jackyang.me/docs/index.html#!/components/badges/badge)
++ [jade](http://jade-lang.com/)
 + [sass](http://sass.bootcss.com/)
 + [flex](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 
@@ -53,13 +55,12 @@
 + [野狗实时云](wilddog.com)
 + REST API
 
-###  协作
+####  协作
 
 + git flow
 
 #### 移动端
 
-+ [React native](http://reactnative.cn/)
-+ [Angular2](https://angular.cn/) + [TypeScript](https://github.com/Microsoft/TypeScript) + [ionic](http://www.ionic.wang/js_doc-index.html)
-+ Native Java & Swift
-
+1. [React Native](http://reactnative.cn/)
+2. [Angular2](https://angular.cn/) + [TypeScript](https://github.com/Microsoft/TypeScript) + [ionic](http://www.ionic.wang/js_doc-index.html)
+3. Native Java & Swift

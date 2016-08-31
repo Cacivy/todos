@@ -1,0 +1,21 @@
+// 用于清除标签默认样式
+
+body {
+	ul {
+		margin: 0;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
