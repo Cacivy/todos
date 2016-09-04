@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Cacivy/todos/issues"
   },
-  "homepage": "https://github.com/Cacivy/todos#readme"
+  "homepage": "https://github.com/Cacivy/todos#readme",
+  "dependencies": {
+    "wilddog": "^2.0.0"
+  }
 }
