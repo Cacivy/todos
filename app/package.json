@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
+    "jquery": "^3.1.0",
     "material-ui-vue": "^0.1.4",
     "materialize-css": "^0.97.7",
     "vue": "^1.0.21",

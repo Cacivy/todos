@@ -1,16 +1,16 @@
 <template lang="jade">
 	div#app
 		navbar
+		list
 </template>
 
 <script>
 	import navbar from './components/nav'
-	import 'materialize-css/bin/materialize.css'
-	import 'materialize-css/bin/materialize.js'
+	import list from './components/list'
 
 	export default {
 		components: {
-			navbar
+			navbar, list
 		}
 	}
 </script>
