@@ -1,10 +1,13 @@
 <template lang="jade">
 header
 	div.row
-		navbar(logo="ToDo", side-nav-id="sideNav",  logo-position="center")
+		navbar(logo="ToDo", side-nav-id="sideNav",  logo-position="center", :showOnLarge="true", :autoHide="false")
 			nav-item
 				a ToDay
 					badges(new) 102
+			nav-item
+				a
+					icon(value="refresh")
 		side-nav#sideNav(fixed)
 			nav-item(active)
 				a link1
