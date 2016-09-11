@@ -1,36 +1,39 @@
 <template>
 	<collection>
-	<collection-item avatar>
-	<img :src="imageUrl" alt="" class="circle">
-	<span class="title">Title</span>
-	<p>First Line <br>
-		Second Line
-	</p>
-	<a href="#!" class="secondary-content"><icon value="grade"></icon></a>
-</collection-item>
-<collection-item avatar>
-<icon value="folder" class="circle"></icon>
-<span class="title">Title</span>
-<p>First Line <br>
-	Second Line
-</p>
-<a href="#!" class="secondary-content"><icon value="grade"></icon></a>
-</collection-item>
-</collection>
+		<collection-item avatar v-for="(key, val) in list">
+			<icon value="query_builder" class="circle"></icon>
+			<span class="title">{{val.date | date}}</span>
+			<p>
+				{{val.text}}
+			</p>
+			<a href="#!" class="secondary-content"><icon value="grade"></icon></a>
+		</collection-item>
+	</collection>
+	<float-button class="red float_button" type="floating" icon="add" large v-link="{path: '/add'}"></float-button>
 </template>
 <script>
 	import collection from 'material-ui-vue/components/collections/collection'
 	import collectionItem from 'material-ui-vue/components/collections/collection-item'
 	import icon from 'material-ui-vue/components/icons/icon.vue'
+	import floatButton from 'material-ui-vue/components/buttons/button.vue'
+	import ref from '../config/willdog'
+
 	export default {
-		components: {collection, collectionItem, icon},
+		components: {collection, collectionItem, icon, floatButton},
 		data: function() {
 			return {
-				imageUrl: 'http://materializecss.com/images/yuna.jpg'
+				list: []
+			}
+		},
+		route: {
+			data() {
+				ref.on('value', (snapshot) => {
+					this.list = snapshot.val().todos
+				})
 			}
 		}
 	}
 </script>
-<style>
-
+<style lang="scss">
+	
 </style>

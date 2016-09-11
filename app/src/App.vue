@@ -1,7 +1,7 @@
 <template lang="jade">
 	div#app
 		navbar
-		list
+		router-view
 </template>
 
 <script>
@@ -16,5 +16,4 @@
 </script>
 
 <style lang="scss">
-	
 </style>
