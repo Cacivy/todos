@@ -1,0 +1,38 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "plugins": [
+        "vue"
+    ],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-console": 0,
+        "comma-dangle": [
+            2,
+            "never"
+        ],
+        "array-bracket-spacing": [
+            2,
+            "never"
+        ],
+        "camelcase": 2
+    }
+}
