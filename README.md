@@ -42,6 +42,8 @@
 
 ### 技术栈
 
+[开发文档](https://github.com/Cacivy/todos/blob/master/develop.md)
+
 #### 前端
 
 + [Vue](http://cn.vuejs.org/) + [Vue Router](router.vuejs.org/zh-cn/index.html) + [Vuex](http://vuex.vuejs.org/zh-cn/tutorial.html#)  + [vue-resource](https://github.com/vuejs/vue-resource) + [Vux](https://vux.li/#!/demo)
